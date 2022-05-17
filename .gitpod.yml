@@ -1,2 +1,1 @@
-image: 
-  file: Dockerfile
+image: laurenttrk/gitpod-workspace-substrate
