@@ -48,6 +48,15 @@ mod sublink_defi_contract {
         #[ink(message)]
         pub fn latest_price_value(&self) -> u128 {
             self.latest_price_value
+        }        
+        
+        /// Return the latest value received from the SubLink ink! extension
+        #[ink(message)]
+        pub fn get_latest_price(&self, feed_id: u32) -> u128 {
+            let latest_price = self.env().extension().latest_data(feed_id).unwrap_or_default();
+            ink_env::debug_println!("######################## get_latest_price value {:?}", &latest_price);
+            latest_price
+            
         }
     }
 }
