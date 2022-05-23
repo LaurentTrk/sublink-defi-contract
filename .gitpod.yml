@@ -1,7 +1,0 @@
-image: laurenttrk/gitpod-workspace-substrate:0.0.2
-vscode:
-  extensions:
-    - rust-lang.rust
-tasks:
-  - init: |
-      cargo install dylint-link cargo-contract
