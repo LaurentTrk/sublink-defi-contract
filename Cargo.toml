@@ -3,6 +3,10 @@ name = "sublink_defi_contract"
 version = "0.1.0"
 authors = ["LaurentTrk <laurent.turek@gmail.com>"]
 edition = "2021"
+description = "SubLink ink! extension simpliest contract"
+license = "Unlicense"
+publish = false
+repository = "https://github.com/LaurentTrk/sublink-pallets"
 
 [dependencies]
 log = { version = "0.4", default-features = false }
@@ -17,7 +21,7 @@ ink_prelude = { version = "=3.0.1", default-features = false }
 scale = { package = "parity-scale-codec", version = "3", default-features = false, features = ["derive"] }
 scale-info = { version = "2", default-features = false, features = ["derive"], optional = true }
 
-sublink-ink-contract-extension = { path = '../chainlink-pricefeeds-node/pallets/sublink-ink/contract', default-features = false, features = ["ink-log-chain-extensions"]}
+sublink-ink-contract-extension = { git = "https://github.com/LaurentTrk/sublink-pallets", default-features = false,  branch = "main", features = ["ink-log-chain-extensions"] }
 
 [lib]
 name = "sublink_defi_contract"

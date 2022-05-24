@@ -669,7 +669,8 @@ checksum = "a2eb9349b6444b326872e140eb1cf5e7c522154d69e7a0ffb0fb81c06b37543f"
 
 [[package]]
 name = "sublink-ink-contract-extension"
-version = "0.1.0"
+version = "0.0.1"
+source = "git+https://github.com/LaurentTrk/sublink-pallets?branch=main#72ea5678c3fa0d493680cf101843d3d1d9897ceb"
 dependencies = [
  "ink_env",
  "ink_lang",
