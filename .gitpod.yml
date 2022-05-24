@@ -1,4 +1,4 @@
-image: laurenttrk/gitpod-workspace-substrate:0.0.2
+image: laurenttrk/gitpod-workspace-substrate:0.0.4
 vscode:
   extensions:
     - rust-lang.rust
